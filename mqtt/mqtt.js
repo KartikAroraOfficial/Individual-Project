@@ -25,7 +25,7 @@ const app = express();
 // const sport = new SerialPort('COM3', { baudRate: 9600 });
 // const parser = sport.pipe(new Readline({ delimiter: '\r\n' }));
 
-mongoose.connect('mongodb+srv://vishal4855be21:g8Syw62NPqqVS5p2@cluster0.bvvimlw.mongodb.net/myFirstDatabase', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('', {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(helmet({
 
@@ -33,7 +33,7 @@ app.use(helmet({
     directives: {
       defaultSrc: ["'self'"],
       scriptSrc: ["'self'", "https://code.highcharts.com/highcharts.js","https://maps.googleapis.com", "https://code.jquery.com", "https://cdnjs.cloudflare.com", "https://stackpath.bootstrapcdn.com", "https://fonts.googleapis.com"],
-      connectSrc: ["'self'", "https://localhost:5000", "mongodb+srv://your-mongodb-url"],
+      connectSrc: ["'self'", "https://65.1.1.230:5000", "mongodb+srv://kartik4835be21:T3KsyseeDjtUnvEM@cluster0.5fl0zch.mongodb.net/Ind-project"],
       frameAncestors: ["'none'"],
       "Cross-Origin-Embedder-Policy": "require-corp",
       imgSrc: ["'self'", "data:"],

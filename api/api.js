@@ -11,7 +11,7 @@ cert: fs.readFileSync('cert.pem'),
 passphrase: 'qwerty'
 };
 
-mongoose.connect('mongodb+srv://vishal4855be21:g8Syw62NPqqVS5p2@cluster0.bvvimlw.mongodb.net/myFirstDatabase', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://kartik4835be21:T3KsyseeDjtUnvEM@cluster0.5fl0zch.mongodb.net/Ind-project', {useNewUrlParser: true, useUnifiedTopology: true });
 
 const Device = require('./models/device'); 
 const Lighting = require('./models/lighting');
@@ -54,7 +54,7 @@ const swaggerSpec = swaggerJSDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.use(cors({
-  origin: 'https://localhost:3000',
+  origin: 'https://13.232.177.201:3000',
   methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 
@@ -63,7 +63,7 @@ app.use(helmet({
     directives: {
       defaultSrc: ["'self'"],
       scriptSrc: ["'self'", "https://code.highcharts.com/highcharts.js","https://maps.googleapis.com", "https://code.jquery.com", "https://cdnjs.cloudflare.com", "https://stackpath.bootstrapcdn.com", "https://fonts.googleapis.com"],
-      connectSrc: ["'self'", "https://localhost:3000", "mongodb+srv://your-mongodb-url"],
+      connectSrc: ["'self'", "https://13.232.177.201:3000", "mongodb+srv://your-mongodb-url"],
       frameAncestors: ["'none'"],
       "Cross-Origin-Embedder-Policy": "require-corp",
       imgSrc: ["'self'", "data:"],
