@@ -25,7 +25,7 @@ const app = express();
 // const sport = new SerialPort('COM3', { baudRate: 9600 });
 // const parser = sport.pipe(new Readline({ delimiter: '\r\n' }));
 
-mongoose.connect('', {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://kartik4835be21:T3KsyseeDjtUnvEM@cluster0.5fl0zch.mongodb.net/Ind-project', {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(helmet({
 
