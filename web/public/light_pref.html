@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select Device</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<style>
+		body {
+			font-family: 'Alkatra', sans-serif;
+            background-image: url("extra.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		.navbar {
+        background-color: transparent !important;
+    	}
+
+		.form-container {
+            background-color: #ffffff;
+        padding: 20px;
+        max-width: 400px;
+        /* margin-left: 100px; */
+        margin-top: 200px;
+        margin-bottom: 10px;
+        height: 50vh;
+		}
+	
+		.form-container, .data-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			
+		}
+
+		form {
+			margin-bottom: 20px;
+		}
+
+	.btn {
+		background-color: #fff;
+		color: #000;
+		size-adjust:inherit;
+		border-color: rgb(0, 0, 0);
+		padding: 10px 20px;
+		margin-right: 100px;
+		margin-left: 850px;
+		margin-top: 23px;
+		position: absolute;
+    }
+
+    .btn1{
+        background-color: #fff;
+		color: #000;
+		border-color: rgb(0, 0, 0);
+		padding: 10px 20px;
+		margin-right: 10px;
+		margin-top: 20px;
+		margin-left: 700px;
+		position: absolute;
+    }
+
+    .btn:hover {
+		background-color: #2b6233;
+      color: #fff;
+    }
+
+    .btn1:hover{
+		background-color: #2b6233;
+      color: #fff;
+    }
+	
+	nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        height: 60px;
+        padding: 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+	</style>
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 form-container" style="margin-left: 200px;">
+				<h2 style="margin-bottom: 30px; color: #2b6233;">Select Device</h2>
+				<form>
+					<label>Type of Device:</label>
+					<select id="d_1_t" class="form-control" name="deviceType">
+						<option value="1">Lighting Device</option>
+						<option value="2">Air-Conditioning Device</option>
+						<option value="3">Security</option> Device</option>
+					</select>
+					<br>
+					<label>Floor Number:</label>
+					<select id="d_1_f" class="form-control" name="floorNumber">
+						<option value="">--Select--</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<br>
+					<label>Room Number:</label>
+					<select id="d_1_r" class="form-control" name="roomNumber">	
+					</select>
+					<br>
+					<label>Device:</label>
+					<select id="d_1_d" class="form-control" name="device">	
+					</select>
+					<br>
+				</form>
+			</div>
+
+            <div class="col-md-6 form-container">
+				<h2 style="margin-bottom: 30px; color: #2b6233;">Select Device</h2>
+				<form>
+					<label>Type of Device:</label>
+					<select id="d_2_t" class="form-control" name="deviceType">
+						<option value="1">Lighting Device</option>
+						<option value="2">Air-Conditioning Device</option>
+						<option value="3">Security</option> Device</option>
+					</select>
+					<br>
+					<label>Floor Number:</label>
+					<select id="d_2_f" class="form-control" name="floorNumber">
+						<option value="">--Select--</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<br>
+					<label>Room Number:</label>
+					<select id="d_2_r" class="form-control" name="roomNumber">
+						
+					</select>
+					<br>
+					<label>Device:</label>
+					<select id="d_2_d" class="form-control" name="device">
+						
+					</select>
+					
+				</form>
+			</div>
+
+            <div class="col-md-6 form-container">
+				<h2 style="margin-bottom: 30px; color: #2b6233;">Select Device</h2>
+				<form>
+					<label>Type of Device:</label>
+					<select id="d_3_t" class="form-control" name="deviceType">
+						<option value="1">Lighting Device</option>
+						<option value="2">Air-Conditioning Device</option>
+						<option value="3">Security</option> Device</option>
+					</select>
+					<br>
+					<label>Floor Number:</label>
+					<select id="d_3_f" class="form-control" name="floorNumber">
+						<option value="">--Select--</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<br>
+					<label>Room Number:</label>
+					<select id="d_3_r" class="form-control" name="roomNumber">
+						
+					</select>
+					<br>
+					<label>Device:</label>
+					<select id="d_3_d" class="form-control" name="device">
+						
+					</select>
+					<br>
+					
+				</form>
+			</div>
+          
+        </div>
+        <button id="d_pref" type="button" class="btn1" >Set</button>
+		<a href="/" class="btn">Home</a>
+
+	</div>
+    </body>
+   
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+    </html>

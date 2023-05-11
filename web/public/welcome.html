@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Alkatra', sans-serif;
+
+      background-image: url("extra.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .jumbotron {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .nav-item:hover a{
+      background-color: black;
+    }
+
+    .navbar {
+      background-color:darkcyan;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand navbar-dark">
+
+		
+		<div class="collapse navbar-collapse" id="navbarNav" style="margin-top: 20px;">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff;  " href="/">Home</a>
+			</li> 
+      <li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/light_pref">Dashboard</a>
+			</li>
+      <li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/monitor">Monitor</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/addD">Add Device</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/RemD">Remove Device</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/lighting">Lighting</a>
+			</li>
+      <li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/aircon">Air-Conditioning</a>
+			</li>
+      <li class="nav-item">
+			  <a class="nav-link" style="font-weight: bold; color:#ffffff; " href="/security">Security</a>
+			</li>
+      
+		  </ul>
+		</div>
+	  </nav>
+
+
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+      <h1 class="display-5 font-weight-bold">Automated Building</h1>
+      <p>
+        <p></p>
+      </p>
+      <p>
+      </p>
+      <p>
+      </p>
+      <p class = "lead", style="font-weight: 500;">IoT Application</p>
+    </div>
+  </div>
+   
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
